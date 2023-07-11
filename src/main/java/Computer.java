@@ -20,4 +20,6 @@ public class Computer {
     public String printerInfo(){
         return this.model;
     }
+
+
 }
