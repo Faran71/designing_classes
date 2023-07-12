@@ -18,10 +18,6 @@ public class ShoppingTrolley {
     }
 
     public boolean checkItem(String item){
-        if (this.trolley.contains(item)){
-            return true;
-        } else {
-            return false;
-        }
+        return this.trolley.contains(item);
     }
 }

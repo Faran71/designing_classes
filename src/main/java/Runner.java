@@ -27,7 +27,7 @@ public class Runner {
         System.out.println("Running computer tasks...");
 
         // 1. Create a new computer object
-        Computer computer = new Computer(45,"HP");
+        Computer computer = new Computer(45);
 
         // 2. Use a getter to find out how much storage the computer has
         int currentStorage = computer.dispStorage();
@@ -40,14 +40,14 @@ public class Runner {
         System.out.println("Computer now has " + newStorage + "GB storage");
 
         // 4. Use a setter to update the computer's printer property
-//        <CALL YOUR METHOD HERE>
+        computer.addPrinter("HP");
         // Write a getter and use it below to check that the setter worked
         String currentPrinter = computer.printerInfo();
         System.out.println("Computer currently has a " + currentPrinter + " printer connected.");
 
         // 5. Write a method to print a message.
         // To test this works *without* a printer too you can comment out the code for question 4
-//        computer.printMessage("Hello World!");
+        System.out.println(computer.printMessage());
     }
 
     public static void shoppingTrolleyDemo(){

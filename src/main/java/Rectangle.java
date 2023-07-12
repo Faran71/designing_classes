@@ -1,7 +1,7 @@
 public class Rectangle {
 
-    private int length;
-    private int width;
+    private final int length;
+    private final int width;
 
     public Rectangle(int length,int width){
         this.length = length;
@@ -9,13 +9,10 @@ public class Rectangle {
     }
 
     public int areaRectangle(){
-        return this.length * this.width;
+        return (this.length * this.width);
     }
+
     public boolean ifSquare(){
-        if (this.length == this.width){
-            return true;
-        } else{
-            return false;
-        }
+        return this.length == this.width;
     }
 }

@@ -1,12 +1,12 @@
 public class Computer {
 
     private int storage;
-    private String model;
+    private String printer;
 
 
-    public Computer(int storage, String model){
+    public Computer(int storage){
         this.storage = storage;
-        this.model = model;
+        this.printer = null;
     }
 
     public int dispStorage(){
@@ -17,8 +17,20 @@ public class Computer {
         this.storage = this.storage + addition;
     }
 
+    public void addPrinter(String printerName){
+        this.printer = printerName;
+    }
+
     public String printerInfo(){
-        return this.model;
+        return this.printer;
+    }
+
+    public String printMessage(){
+        if (this.printer == (null)){
+            return "";
+        } else {
+            return "Printer Connected";
+        }
     }
 
 
