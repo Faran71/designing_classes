@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 public class ShoppingTrolley {
 
-    ArrayList<String> trolley ;
+    private ArrayList<String> trolley ;
 
     public ShoppingTrolley(){
-        this.trolley = new ArrayList<String>();
+        this.trolley = new ArrayList<>();
 
     }
 
